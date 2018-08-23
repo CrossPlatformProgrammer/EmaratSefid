@@ -1,0 +1,119 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>EmaratSefid</Name>
+    <ProjectGuid>{533c710f-62b4-4583-8957-27024dd07a75}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="assets\AppAsset.php" />
+    <Compile Include="commands\HelloController.php" />
+    <Compile Include="config\console.php" />
+    <Compile Include="config\db.php" />
+    <Compile Include="config\params.php" />
+    <Compile Include="config\test.php" />
+    <Compile Include="config\test_db.php" />
+    <Compile Include="config\web.php" />
+    <Compile Include="controllers\SiteController.php" />
+    <Compile Include="mail\layouts\html.php" />
+    <Compile Include="models\ContactForm.php" />
+    <Compile Include="models\LoginForm.php" />
+    <Compile Include="models\User.php" />
+    <Compile Include="runtime\.gitignore" />
+    <Compile Include="tests\acceptance\AboutCest.php" />
+    <Compile Include="tests\acceptance\ContactCest.php" />
+    <Compile Include="tests\acceptance\HomeCest.php" />
+    <Compile Include="tests\acceptance\LoginCest.php" />
+    <Compile Include="tests\acceptance\_bootstrap.php" />
+    <Compile Include="tests\bin\yii" />
+    <Compile Include="tests\bin\yii.bat" />
+    <Compile Include="tests\functional\ContactFormCest.php" />
+    <Compile Include="tests\functional\LoginFormCest.php" />
+    <Compile Include="tests\functional\_bootstrap.php" />
+    <Compile Include="tests\unit\models\ContactFormTest.php" />
+    <Compile Include="tests\unit\models\LoginFormTest.php" />
+    <Compile Include="tests\unit\models\UserTest.php" />
+    <Compile Include="tests\unit\_bootstrap.php" />
+    <Compile Include="tests\_data\.gitkeep" />
+    <Compile Include="tests\_output\.gitignore" />
+    <Compile Include="tests\_support\AcceptanceTester.php" />
+    <Compile Include="tests\_support\FunctionalTester.php" />
+    <Compile Include="tests\_support\UnitTester.php" />
+    <Compile Include="tests\acceptance.suite.yml.example" />
+    <Compile Include="tests\functional.suite.yml" />
+    <Compile Include="tests\unit.suite.yml" />
+    <Compile Include="tests\_bootstrap.php" />
+    <Compile Include="vagrant\config\.gitignore" />
+    <Compile Include="vagrant\config\vagrant-local.example.yml" />
+    <Compile Include="vagrant\nginx\log\.gitignore" />
+    <Compile Include="vagrant\nginx\app.conf" />
+    <Compile Include="vagrant\provision\always-as-root.sh" />
+    <Compile Include="vagrant\provision\once-as-root.sh" />
+    <Compile Include="vagrant\provision\once-as-vagrant.sh" />
+    <Compile Include="views\layouts\main.php" />
+    <Compile Include="views\site\about.php" />
+    <Compile Include="views\site\contact.php" />
+    <Compile Include="views\site\error.php" />
+    <Compile Include="views\site\index.php" />
+    <Compile Include="views\site\login.php" />
+    <Compile Include="web\assets\.gitignore" />
+    <Compile Include="web\css\site.css" />
+    <Compile Include="web\favicon.ico" />
+    <Compile Include="web\index-test.php" />
+    <Compile Include="web\index.php" />
+    <Compile Include="web\robots.txt" />
+    <Compile Include="widgets\Alert.php" />
+    <Compile Include=".bowerrc" />
+    <Compile Include=".gitignore" />
+    <Compile Include="codeception.yml" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="docker-compose.yml" />
+    <Compile Include="LICENSE.md" />
+    <Compile Include="README.md" />
+    <Compile Include="requirements.php" />
+    <Compile Include="Vagrantfile" />
+    <Compile Include="yii" />
+    <Compile Include="yii.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets" />
+    <Folder Include="commands" />
+    <Folder Include="config" />
+    <Folder Include="controllers" />
+    <Folder Include="mail\layouts" />
+    <Folder Include="mail" />
+    <Folder Include="models" />
+    <Folder Include="runtime" />
+    <Folder Include="tests\acceptance" />
+    <Folder Include="tests\bin" />
+    <Folder Include="tests\functional" />
+    <Folder Include="tests\unit\models" />
+    <Folder Include="tests\unit" />
+    <Folder Include="tests\_data" />
+    <Folder Include="tests\_output" />
+    <Folder Include="tests\_support" />
+    <Folder Include="tests" />
+    <Folder Include="vagrant\config" />
+    <Folder Include="vagrant\nginx\log" />
+    <Folder Include="vagrant\nginx" />
+    <Folder Include="vagrant\provision" />
+    <Folder Include="vagrant" />
+    <Folder Include="views\layouts" />
+    <Folder Include="views\site" />
+    <Folder Include="views" />
+    <Folder Include="web\assets" />
+    <Folder Include="web\css" />
+    <Folder Include="web" />
+    <Folder Include="widgets" />
+  </ItemGroup>
+</Project>
